@@ -1,0 +1,80 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .buttons{
+                margin: 20px;
+                padding: 20px 20px;
+                list-style-type: none;
+                /* display: flex; */
+                flex-direction: column;
+                background-color: rgba(48, 119, 48, 0.849);
+            }
+           .p{
+                border: solid 2px black;
+                padding: 10px;
+                width: 6cm;   
+                font-family: sans-serif;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="p">
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <p id="p5"></p>
+    </div>
+        <div class="buttons">
+            <ul>
+                <li>
+                    <button onclick="b1()">idli </button>
+                    <button onclick="b2()">dosa</button>
+                    <button onclick="b3()">rice</button>
+                    <button onclick="b4()">chapati</button>
+                    <button onclick="b5()">vada</button>
+                </li>
+            </ul>
+        </div>
+        <script>
+             var items=[];
+                        
+            function b1()
+            {
+                var item=["idli"];
+            document.getElementById("p1").innerText=item; 
+            } 
+
+            function b2()
+            {
+                var item=["dosa"];
+            document.getElementById("p2").innerText=item; 
+            } 
+
+            function b3()
+            {
+                var item=["rice"];
+            document.getElementById("p3").innerText=item; 
+            }
+            
+            function b4()
+            {
+                var item=["chapati"];
+            document.getElementById("p4").innerText=item; 
+            } 
+
+            function b5()
+            {
+                var item=["vada"];
+            document.getElementById("p1").innerText=item; 
+            }          
+                       
+        </script>
+    </body>
+    </html>

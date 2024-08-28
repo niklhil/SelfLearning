@@ -1,0 +1,68 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <style>
+            .b1{
+                width: 6cm;
+              
+                display: flex;
+                flex-direction: column;
+                color: red;
+            }
+            #opr{
+                color: aqua;
+                margin-left: 2cm;
+            }
+            .container{
+                border: 2px solid black;
+                
+                margin-right: 20px;
+                padding: 20px;
+                display: inline-block;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+           <center><h1>Calculator</h1></center> 
+        <input type="text" id="first" class="b1">
+        <select name="" id="opr">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+        <input type="text" id="second" class="b1">
+        <button onclick="calc()">calculate</button>
+        <input type="text" readonly="" id="res">
+    </div>
+    </body>
+    <script>
+        function calc()
+        {
+            var a=document.getElementById("first").value;
+            var b=document.getElementById("second").value;
+            var opr=document.getElementById("opr").value;
+                if(opr=="+")
+                 {
+                    res=parseInt(a)+parseInt(b);
+
+                }
+           if(opr=="-")
+            {
+                res=parseInt(a)-parseInt(b);
+            } if(opr=="*")
+            {
+                res=parseInt(a)*parseInt(b);
+            } if(opr=="/")
+            {
+                res=parseInt(a)/parseInt(b);
+            }
+            document.getElementById("res").value = res;
+        }
+    </script>
+    </html>

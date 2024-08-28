@@ -1,0 +1,261 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033\deflangfe1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green77\blue187;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\generator Riched20 10.0.19041}{\*\mmathPr\mdispDef1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\nowidctlpar\sa200\sl276\slmult1\b\f0\fs24\lang9  auto promotion\b0 :In Java, autopromotion (also known as automatic type promotion or type coercion) refers to the implicit conversion of a smaller data type to a larger data type when the smaller type is used in an expression where the larger type is expected.\par
+\par
+\b Manual typecasting\b0  in Java (or explicit typecasting) refers to the process of converting a variable from one data type to another by the programmer explicitly specifying the desired data type.\par
+\b Automatic typecasting \b0 in Java simplifies coding by handling conversions between compatible data types automatically.It ensures that operations involving different data types behave predictably and safely, without requiring explicit casting or conversion by the programmer\par
+\par
+\b In Java, the switch statement \b0 provides a convenient way to execute different blocks of code based on the value of a variable or an expression. It is primarily used for multi-way branching, where the execution flow can take different paths depending on the value of a specific variable.\par
+\b\lang1033 The while loop \b0 first evaluates the condition. If the condition is true, the block of code inside the loop is executed. Afterward, the condition is re-evaluated.\par
+\b The do-while loop \b0 first executes the block of code inside the loop, and then it evaluates the condition. If the condition is true, the loop executes again, repeating the process.\par
+\b A for loop \b0 is a fundamental control flow structure in programming languages like Java. It's designed to repeatedly execute a block of code a fixed number of times or iterate over a sequence of elements (like arrays or collections).\par
+\b "for-each" loop\b0 , also known as an enhanced for loop, provides a simpler way to iterate through elements of an array or a collection\par
+ \b two-dimensional array is an array \b0 of arrays. It allows you to store data in a grid-like format with rows and columns.\par
+\b An object \b0 in Java is an instance of a class. It represents a particular instance of a class and encapsulates data (attributes) and methods (functions) that operate on the data. When you instantiate a class using the new keyword, you create an object of that class.\lang9\par
+\b A reference variable \b0 in Java is a variable that holds the memory address (reference) of an object rather than the actual object itself. When you create an object using new, Java allocates memory for that object and returns a reference to it. This reference is stored in a reference variable.\par
+\b In Java, a constructor \b0 is a special type of method that is used to initialize objects. It is called when an object of a class is created using the new keyword.\par
+\b In Java, a copy constructor \b0 is a constructor that creates a new object as a copy of an existing object. The purpose of a copy constructor is to initialize a new object using the state of an existing object of the same class\par
+\b An instance variable \b0 in Java is a variable that is associated with instances (objects) of a class. Each object of the class has its own copy of the instance variables, which are not shared among instances. Instance variables are also known as fields or member variables.\par
+\b A static variable \b0 in Java is a class-level variable that belongs to the class itself, rather than to instances (objects) of the class. This means there is only one copy of the static variable shared among all instances of the class. Static variables are also known as class variables because they are associated with the class rather than with any specific instance of the class.\par
+\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\sa200 A class is a blueprint or a template for creating objects of that class. A class encapsulates data (attributes or fields) and methods (functions) that operate on that data.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\sb100\sa100\qj\lang1033 An object is an instance of a class. Objects are created in heap.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\sb100\sa100\qj There can be only one top level \i public\i0  class in a file.\par
+{\pntext\f1\'B7\tab}A file can have more than one non-\i public\i0  class.\par
+{\pntext\f1\'B7\tab}Reference variable is a class type variable which holds object address\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\sa200\lang9 Object stores class type data\par
+{\pntext\f1\'B7\tab}Instance variables are defined inside a class, but outside of any method, constructor, or block. They are declared within the class and are associated with individual objects or instances of that class.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\sb100\sa100\qj\lang1033 Non-\i static\i0  data members of a class are called as instance variables.\par
+{\pntext\f1\'B7\tab}Instance variables are associated with objects. An instance variable can store different value in different objects. \par
+{\pntext\f1\'B7\tab}We can\rquote t access non-static class members using null reference it results in run-time error called NullPointerException.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\sa200 Data members are those which are defined inside a class.\lang9\par
+{\pntext\f1\'B7\tab}\lang1033 Local variables are those which are defined inside a block.\lang9\par
+{\pntext\f1\'B7\tab}\lang1033 Data members are available to the entire class.\lang9\par
+{\pntext\f1\'B7\tab}\lang1033 Local variables are available only to that particular block in which it is defined.\lang9\par
+{\pntext\f1\'B7\tab}\lang1033 Data members have data specific \i default\i0  values.\lang9\par
+{\pntext\f1\'B7\tab}\lang1033 Local variables do not have default values.\lang9\par
+
+\pard\nowidctlpar\fi360\li360\sa200 Three types of constructors:\par
+
+\pard\nowidctlpar\fi720\li720\sa200 1.\tab Default constructor (No parameter)\par
+
+\pard\nowidctlpar\fi360\li1080\sa200 2.\tab Parameterized constructor (With parameter/s)\par
+
+\pard\nowidctlpar\fi720\li720\sa200 3.\tab Copy constructor\par
+
+\pard\nowidctlpar\sa200\bullet\tab Constructor name is same as class name.\par
+\bullet\tab It doesn't have any return type, not even void.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-360\li720\sa200\qj A static data member, also known as a static variable or class variable, is a variable that belongs to a class rather than an instance of the class. It is shared by all instances of the class and retains its value throughout the program's execution. \par
+{\pntext\f1\'B7\tab}When a variable is declared as static, only one copy of that variable is created and shared among all objects or instances of the class. This means that any changes made to the static variable will be reflected in all instances of the class. \par
+{\pntext\f1\'B7\tab}Static data members are defined at the class level and are prefixed with the keyword "static." They are typically used when you want to maintain a common value or state across all instances of a class. Static data members are often used to store data that is shared among all objects of a class, such as constants, configuration settings, or counters.\par
+{\pntext\f1\'B7\tab}Static data members are typically destroyed when the class is unloaded.\par
+{\pntext\f1\'B7\tab}Static members can be accessed using class name, object name and null reference variable\par
+{\pntext\f1\'B7\tab}\lang1033 Static methods cannot directly access non-static members, but they can access them through an instance of the class.\lang9\par
+{\pntext\f1\'B7\tab}Constructor can be overloaded, in Java i.e. a class can have multiple constructors.\par
+{\pntext\f1\'B7\tab}A constructor can call another constructor of the same class using this keyword and reuse its functionality.\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\b In Java, packages \b0 are used to organize classes and interfaces into namespaces, making it easier to manage and locate Java classes and preventing naming conflicts.\par
+\b An abstract class \b0 in Java is a class that cannot be instantiated on its own and is typically used as a base class for other classes. Abstract classes serve as templates or blueprints for other classes that extend them, providing common methods and fields that subclasses can implement or override as needed.\par
+Abstract class can't be instantiated\par
+Class should be declared abstract if it has any abstract method\par
+Abstract class child need to implement all inherited abstract methods\par
+Child class should be declared abstract if it does not override\par
+ any of the inherited abstract methods.\par
+It is not compulsory for a child class to override all inherited abstract methods\par
+Data memebers can not be abstract, since they can not be overridden\par
+
+\pard\widctlpar\qj\b\lang1033 Points to remember:\par
+\b0\par
+1. Interfaces cannot be instantiated.\par
+
+\pard\widctlpar\fi-180\li180\qj 2. A class can inherit interface using \i implements\i0  keyword. It has to implement all inherited abstract methods. If it does not overrides any method then class should be declared abstract.\par
+
+\pard\widctlpar\qj 3. A class can \i implement\i0  multiple interfaces.\par
+4. Interface does not have constructors.\par
+5. By default interfaces data members are public, final and static. \par
+
+\pard\widctlpar\fi-180\li180\qj 6. Implemented interface method should be marked public.      \par
+
+\pard\widctlpar\qj 7. A class \i implements\i0  an interface, but it cannot \i extend\i0  any interface.  \par
+8. A class can \i extend\i0  some other class and at the same time \i implement\i0  one or more interfaces.\par
+9. A class can have an interface as a member.\par
+10. Interface can be used to reuse constants in a project.\par
+11. Same interface can be implemented by multiple classes in java.\par
+12. As java does not support multiple inheritance, it is better to reuse the constant using interface.\par
+13. One interface can extend another interface to inherit its feature.\par
+14. One interface can extend multiple interfaces in java.\par
+15. By default all interface members are public.\par
+16. By default undefined methods of interface are public & abstract.\par
+17. Interface cannot be declared final as it is abstract by default.\par
+18. Interface should be marked public to make it visible to other packages.\par
+19. Interface data members can\rquote t be private.\par
+20. A class can implement interface; but can\rquote t extend it.\par
+21. An interface can extend some other interface; but can\rquote t implement.\par
+\ul\par
+\ulnone\b Uses of interface\b0\par
+\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\fi-360\li720\qj Interface can be used to reuse constants in a application.\par
+{\pntext\f1\'B7\tab}Interfaces can be used to force method overriding\par
+{\pntext\f1\'B7\tab}An interface reference variable can hold object of the class that implements the interface. This allows achieving dynamic method dispatch..\par
+{\pntext\f1\'B7\tab}It supports limited form of multiple inheritances.\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\lang9\par
+\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl360\slmult1\qc\b\lang16393 Abstract Class\b0\cell 
+\pard\intbl\widctlpar\sa200\sl276\slmult1\qc\b Interface\b0\cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 1. It can have both defined and undefined methods\cell 1. It can have undefined & static defined methods\cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 2. Members are \lquote default\rquote  by default.\cell 2. Members are \lquote public\rquote  by default\cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 3. Data members are not public,  \lquote static\rquote  and \lquote final\rquote  by default\cell 3. Data members are public, \lquote static\rquote  and \lquote final\rquote  by default\cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 4. It can have both variables and constants.\cell 4. It can have only constants\cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 5. It can have both default and Parameterized constructors\cell 5. It has no constructor \cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 6. Methods are not \lquote abstract\rquote  by default\cell 6. Methods are \lquote abstract\rquote  by default\cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 7. Concrete methods in abstract class can be \lquote final\rquote\cell 7. Methods can\rquote t be \lquote final\rquote  in interface.\cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 8. A class can inherit a single abstract class\cell 8. A class can inherit multiple interfaces\cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 9. Abstract class doesn\rquote t support Multiple Inheritance\cell 9.Supports Multiple Inheritance \cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 10. A class can inherit abstract class using \lquote extends\rquote  keyword\cell 10. A class can inherit interface(s) using \lquote implements\rquote  keyword\cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 11. Loosely coupled applications cannot be developed\cell 11. Loosely coupled applications can be developed\cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 12. It is a General Concept and is available in almost all OOP Languages\cell 12. They are introduced first in java. Now they are available in later version of OOP languages like C#\cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 13. Abstract method overridden in child class can have same or stronger access level\cell 13. Interface methods overridden in implementing class must have \lquote public\rquote  access level\cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 14. Data members can be public, private, protected or default\cell 14 Data members can only be \lquote public\rquote  (Either Implicitly or Explicitly)\cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 15. A class can only extend another class not interface\cell 15. An interface can only extend another interface(s) not class\cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 16. A class is not \lquote abstract\rquote  by default  \cell 16. An interface is \lquote abstract\rquote  by default  \cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 17. Abstract class name should be in \lquote Noun\rquote  form\cell 17. Interface name can be in \lquote Adjective\rquote   or Noun form \cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 18. Super most class of every abstract class is \lquote Object\rquote  class \cell 18. Interface does not have any built in super most interface\cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 19. Suitable for code reusability and to force method overriding.\cell 19. Suitable for reusing constants and forcing method overriding. \cell\row\trowd\trgaph10\trleft45\trpaddl10\trpaddr10\trpaddfl3\trpaddfr3
+\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx4065\clcfpat2\clcbpat3\clbrdrl\brdrw10\brdrs\brdrcf2\clbrdrt\brdrw10\brdrs\brdrcf2\clbrdrr\brdrw10\brdrs\brdrcf2\clbrdrb\brdrw10\brdrs\brdrcf2 \cellx8760 
+\pard\intbl\widctlpar\sa200\sl276\slmult1 20. Declared using the keyword \lquote abstract class\rquote\cell 20. Declared using the keyword \lquote interface\rquote\cell\row 
+\pard\widctlpar\sa200\sl276\slmult1\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\b\lang9 Exception\b0  in Java refers to an event that occurs during the execution of a program that disrupts the normal flow of instructions.\par
+Types of Exceptions: Exceptions in Java are categorized into two types:\par
+\par
+Checked Exceptions: These are checked at compile time. You must either handle them using try-catch blocks or declare them in the method signature using throws clause.\par
+Unchecked Exceptions: These are not checked at compile time and usually represent programming bugs, such as NullPointerException, ArrayIndexOutOfBoundsException, etc.\par
+In Java, an interface is a reference type that is similar to a class but is used to specify a set of methods that a class must implement. It defines a contract for what methods a class should have, without specifying how those methods are implemented.\par
+In Java, the \b this\b0  keyword is used primarily to refer to the current instance of a class.\par
+\b Java Life Cycle:\par
+--------------------\par
+\b0 1) Source code development\par
+2) Compilation\par
+3) Class loading\par
+       a) All static data members are created and initialized to default values\par
+       b) All static blocks are executed sequentially\par
+4) main() starts \par
+5) If main() creates any object, then all its instance variables are created and initialized to default values.\par
+6) There after all non-static blocks are executed sequentially\par
+7) Then constructor is executed.\par
+8) main() continues.\par
+9) Finally, main() ends\par
+\b\par
+\b0 Inheritance in Java is a mechanism where one class (called the subclass or child class) inherits the properties and behaviors (methods) of another class (called the superclass or parent class). This allows the subclass to reuse the code of the superclass, thereby promoting code reusability and reducing redundancy\b .\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\nowidctlpar\fi-360\li720\sa200\sl276\slmult1\b0 Single Inheritance: A subclass extends only one superclass.\par
+{\pntext\f0 2.\tab}Multilevel Inheritance: A subclass is derived from another subclass.\par
+{\pntext\f0 3.\tab}Hierarchical Inheritance: Multiple subclasses inherit from a single superclass.\par
+{\pntext\f0 4.\tab}Multiple Inheritance (not directly supported in Java): A subclass extends multiple classes. Java supports multiple inheritance through interfaces (interface inheritance\b ).\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1 Access specifiers \b0 (also known as access modifiers) are keywords used in object-oriented programming to control the visibility of class members (such as variables and methods).\par
+\tab\tab\tab Default class all acess specifiers\par
+Public members of a default class are visible only within the same package. Hence they can be inherited only within the same package.\par
+ Protected members of a default class are visible only within the same package. Hence they can be inherited only within the same package.\par
+ Default members of a default class are visible only within the same package. Hence they can be inherited only within the same package.\par
+  Private memebers are visible only within the same class. Hence they are never inherited.\par
+\par
+\b Runtime polymorphism\b0 : also known as dynamic polymorphism, is a concept in object-oriented programming where the method that gets executed is determined at runtime rather than compile time. It allows objects to be treated as instances of their parent class while still calling methods that are specific to their actual class. This is primarily achieved through method overriding and dynamic method dispatch.\par
+\b Compile\b0 -\b time polymorphism\b0 : also known as static polymorphism, is a type of polymorphism that is resolved during the compilation of the program.\par
+\par
+\b Exceptions\par
+\b0 In Java, the Throwable class is the superclass for all errors and exceptions that can be thrown by the Java Virtual Machine (JVM). It is part of the java.lang package and serves as the base class for both exceptions and errors, which are used to handle abnormal conditions in a program.\par
+diff between Exeptions and errors\par
+\par
+Exceptions: \par
+1.Represent conditions that an application might want to catch, such as invalid user input or an unavailable network resource. These are conditions that the application can handle and potentially recover from.\par
+2.Exceptions are handled by devolopers\par
+In Exception there are two types \par
+1.Checked Exceptions :\par
+Ex: IOException,FileNotFoundException,SQL Exception,ClassNotFoundException.\par
+2.Unchecked Exceptions:Unchecked exceptions in Java are a category of exceptions that are not checked at compile-time. These exceptions occur due to programming errors, such as logic flaws or improper use of an API, and are subclasses of the RuntimeException class.\par
+ex:NullPointerException,ArayIndexOutOfBoundException,ArithmeticExceptions ,\par
+\cf1 public class Example \{\par
+    public static void main(String[] args) \{\par
+        String str = null;\par
+        \par
+        try \{\par
+            System.out.println(str.length()); // This will throw a NullPointerException\par
+        \} catch (NullPointerException e) \{\par
+            System.out.println("Caught a NullPointerException: " + e.getMessage());\par
+        \}\par
+    \}\par
+\}\par
+\cf0 Errors: Represent serious issues that are typically not expected to be handled by applications. These are conditions that generally indicate problems with the runtime environment itself.\par
+2.Errors are handled by JVM riuntime Environment\par
+ex: StackOverFlow, OutOfMemory.\par
+Final leyword:In Java, the finally block is used in exception handling to execute code that must run regardless of whether an exception is thrown or not.\par
+throw keyword:In Java, the throw keyword is used to explicitly throw an exception from your code. This allows you to create and manage your own custom error conditions, rather than just relying on the standard exceptions thrown by Java runtime\par
+\par
+\tab\tab\b\tab Collections\par
+\b0 collections:The Collection in Java is a framework that provides an architecture to store and manipulate the group of objects.\par
+Java Collections can achieve all the operations that you perform on a data such as searching, sorting, insertion, manipulation, and deletion.\par
+there are 3 types of colections\par
+1)list based\par
+2)set based\par
+3)queue based\par
+\par
+1.list based\par
+they store elements in insertion order\par
+*they support index based access\par
+*they allow duplicate elements\par
+*they allow null values\par
+Ex:ArrayList , LinkedList\par
+2.set basd collections\par
+*store only unique elements\par
+*dont support index based access\par
+*HashSet and LinkedHashSet are set based collections\par
+3.queue based collections\par
+*they allow FIFO\par
+*insertion done by end of queue and deletion done by front of queue\par
+*normal queue in java allow duplicate and null value\par
+*it doesnt support index based access.\par
+*we can traverse the queue elements either using yhe for each loop or iterator. \par
+*queue spport all methods of collections interface insertion deletion etc...\par
+\par
+deque:double ended queue means we can add  and remove from the both sides\par
+\par
+\b\par
+\par
+\b0\par
+\par
+\par
+}
+ 
